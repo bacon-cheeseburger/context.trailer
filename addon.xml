@@ -7,7 +7,7 @@
     <menu id="kodi.core.main">
       <item library="addon.py">
         <label>32000</label>
-        <visible>String.IsEqual(ListItem.dbtype,movie) + !String.IsEmpty(ListItem.Trailer)</visible>
+        <visible>[String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) ] + !String.IsEmpty(ListItem.Trailer)</visible>
       </item>
     </menu>
   </extension>
